@@ -1,39 +1,27 @@
 ---
 import Github from "../components/Github.astro";
 import Extensiones from "../components/Extensiones.astro";
+import Estudios from "../components/Estudios.astro";
 ---
 
 <>
   <section class="[grid-area:b] border-white border-2 rounded-2xl"></section>
   <Extensiones />
   <section class="[grid-area:d] border-white border-2 rounded-2xl"></section>
-  <section class="[grid-area:e] e flex flex-col gap-3 rounded-2xl p-4">
-    <h2 class="text-xl font-bold border-b-2 w-3/5 text-amber-100">Estudios</h2>
-    <h3 class="text-sm font-bold">
-      <a
-        target="_blank"
-        href="https://web.rollingcodeschool.com/wp-content/uploads/2023/10/Programa-Fullstack-2023.pdf"
-        >RollingCode-FULL STACK</a
-      >
-    </h3>
-
-    <h3 class="text-sm font-bold">
-      <a
-        target="_blank"
-        href="https://web.rollingcodeschool.com/wp-content/uploads/2023/11/Programa-React-Avanzado-2023.pdf"
-        >RollingCode-REACT AVANZADO</a
-      >
-    </h3>
-  </section>
+  <Estudios />
   <Github />
+  <section class="[grid-area:h] border-white border-2 rounded-2xl"></section>
+  <section class="[grid-area:i] i rounded-2xl opacity-90">
+    <a target="_blank" href="https://www.linkedin.com/in/pablo-zottola/"
+      ><h2
+        class="absolute text-xl font-bold text-white z-10 p-3 pointer-events-none"
+      >
+        Linkedin
+      </h2><img
+        class="w-full h-full object-cover rounded-2xl"
+        src="../../public/linkedin.webp"
+        alt=""
+      /></a
+    >
+  </section>
 </>
-
-<style>
-  .e {
-    background-image: url("../../public/estudios.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-shadow: black 0 2px;
-  }
-</style>
